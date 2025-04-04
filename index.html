@@ -17,6 +17,20 @@
   <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX5IDTimEWoTd?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   <button onclick="document.querySelector('.hug-message').style.display='block'">Butuh Pelukan?</button>
   <div class="hug-message">Pelukan virtual dikirim... Tunggu real hug yaa 🫂</div>
+  <!-- ... sebelumnya tetap sama -->
+  <button>Butuh Pelukan?</button>
+  <div class="hug-message">Pelukan virtual dikirim... Tunggu real hug yaa 🫂</div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const button = document.querySelector('button');
+      const message = document.querySelector('.hug-message');
+
+      button.addEventListener('click', () => {
+        message.classList.add('show');
+      });
+    });
+  </script>
 </body>
 </html>
 =======

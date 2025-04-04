@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Untuk Kamu</title>
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-
 </head>
 <body>
   <h1>Untuk Pacarkuuu yang Hebat</h1>
@@ -15,33 +14,18 @@
   </p>
   <img src="kita.jpg" alt="Kita">
   <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX5IDTimEWoTd?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-  <button onclick="document.querySelector('.hug-message').style.display='block'">Butuh Pelukan?</button>
-  <div class="hug-message">Pelukan virtual dikirim... Tunggu real hug yaa 🫂</div>
-  <!-- ... sebelumnya tetap sama -->
-  <button>Butuh Pelukan?</button>
-  <div class="hug-message">Pelukan virtual dikirim... Tunggu real hug yaa 🫂</div>
+  <button id="button-pelukan">Butuh Pelukan?</button>
+  <div class="hug-message" style="display: none;">Pelukan virtual dikirim... Tunggu real hug yaa 🫂</div>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const button = document.querySelector('button');
+      const button = document.getElementById('button-pelukan');
       const message = document.querySelector('.hug-message');
 
       button.addEventListener('click', () => {
-        message.classList.add('show');
+        message.style.display = 'block';
       });
     });
   </script>
 </body>
-</html>
-=======
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Untuk Kamu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-
-</head>
 </html>
